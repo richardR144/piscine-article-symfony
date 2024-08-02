@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!--pour personnaliser mes pages avec de la couleur par exemple-->
+<main>
+    <!--je créai une section plus facile à retrouver en css si je veux agir/ je veux afficher le titre,
+    les img et le paragraphe avec la boucle for-->
+    <section>
+        {% for article in articles %}
+            <article>
+                <h2>{{ article.title }}</h2>
+                <div>
+                    <img src="{{ article.image }}" alt="images de champignon atomic">
+                </div>
+                <p>{{  article.content }}</p>
+            </article>
+        {% endfor %}
+
+    </section>
+
+</main>
+{% endblock %}

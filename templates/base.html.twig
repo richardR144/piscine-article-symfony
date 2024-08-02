@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('asset/style.css') }}">
+         <body>
+    <header>
+        <nav class="header-nav">
+            <img class="header-image" src="{{asset('images/bombeNucleaire.jpeg')}}" alt="Champignon atomic">
+            <ul class="header-links">
+                <li><a href="accueil">Accueil</a></li>
+                <li><a href="bienvenue">Bienvenue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block body %}{% endblock %}
+
+    <footer>
+        <p>T'es grillé !!</p>
+    </footer>
+
+    </body>
+</html>

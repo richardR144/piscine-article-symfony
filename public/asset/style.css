@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: yellow;
+}
+
+nav {
+    background-color: pink;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
+h1 {
+    color: crimson;
+
+
+}
+
+h2 {
+    color: darkred;
+
+
+}
+
+p {
+    color: black;
+
+}
+
